@@ -1,32 +1,32 @@
 import cbpro
 
+c = cbpro.PublicClient()
+
+
 class Coin:
 
-    price = 0
-    buyVolume = 0
-    coinName = "Placeholder"
-    marketCap = 0
-    sellVolume = 0
-    totalVolume = 0
+    def __init__(self, coinName):
+        self.coinName = coinName
+        self.data = c.get_product_24hr_stats(coinName)
+        self.price = self.data.get("last")
+        self.volume = self.data.get("volume")
+        self.monthlyVolume = self.data.get("volume_30day")
 
     def getPrice(self):
-        return 0
+        return self.price
 
-    def getBuyVolume(self):
-        return 0
+    def getVolume(self):
+        return self.volume
 
-    def getSellVolume(self):
-        return 0
-
-    def  totalVolume(self):
-        return 0
+    def getMonthlyVolume(self):
+        return self.monthlyVolume
 
     def getCoinName(self):
-        return 0
+        return self.coinName
 
-    def setCoinName(self):
-        return 0
 
-    def getMarketCap(self):
-        return 0
-
+coin1 = Coin("ETH-USD")
+print(coin1.getCoinName())
+print(coin1.getVolume())
+print(coin1.getMonthlyVolume())
+print(coin1.getPrice())
