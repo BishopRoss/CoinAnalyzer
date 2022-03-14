@@ -1,0 +1,498 @@
+ZRX     0x
+1INCH       1inch
+AAVE        Aave
+AERGO       Aergo
+AIOZ        Aioz_Network
+ALCX        Alchemix
+ACH     Alchemy_Pay
+AGLD        Adventure_Gold
+ALGO        Algorand
+AMP     AMP
+FORTH       Ampleforth_Governance_Token
+ANKR        Ankr
+API3        API3
+ARPA        ARPA_Chain
+ASM     Assemble_Protocol
+REP     Augur
+AVAX        Avalanche
+AVT     Aventus
+AXS     Axie_Infinity
+BADGER      Badger_DAO
+BAL     Balancer
+BNT     Bancor_Network_Token
+BAND            Band_Protocol
+BOND        BarnBridge
+BAT     Basic_Attention_Token
+BICO        Biconomy
+BTC     Bitcoin
+BCH     Bitcoin_Cash
+BLZ     Bluzelle
+FIDA        Bonfida
+AUCTION     Bounce_Token_AUC
+BTRST       Braintrust
+ADA     Cardano
+CTSI        Cartesi
+CGLD        Celo
+LINK        Chainlink
+CHZ     Chiliz
+CVC     Civic
+CLV     Clover_Finance
+COMP        Compound
+ATOM        Cosmos
+COTI        COTI
+COVAL       COVAL
+CTX     Cryptex_Finance
+CRO     Crypto_com_Chain
+CRV     Curve_DAO_Token
+DAI     Dai
+DASH        Dash
+MANA        Decentraland
+DESO        Decentralized_Social
+DDX     DerivaDAO
+YFII        DFI_Money
+DIA     Dia
+DNT     District0x
+DOGE        Dogecoin
+ENJ     Enjin_Coin
+MLN     Enzyme
+EOS     EOS
+ETH     Ethereum
+ETC     Ethereum_Classic
+ENS     Ethereum_Name_Service
+ERN     Ethernity_Chain
+FET     Fetch_ai
+FIL     Filecoin
+FX      Function_Coin
+GALA        Gala
+GTC     Gitcoin
+GODS        Gods_Unchained
+GFI     Goldfinch
+GLM     Golem
+GYEN        GYEN
+FARM        Harvest_Finance
+HIGH        Highstreet
+ZEN     Horizen
+IDEX        IDEX
+RLC     iExec_RLC
+IMX     Immutable_X
+ICP     Internet_Computer
+INV     Inverse_Finance
+IOTX        IoTeX
+JASMY       Jasmy
+KEEP        Keep_Network
+KRL     Kryll
+KNC     Kyber_Network
+LCX     LCX
+LQTY        Liquidity
+LTC     Litecoin
+LPT     Livepeer_LPT
+LOOM        Loom_Network
+LRC     Loopring
+MKR     Maker
+MPL     Maple
+MASK        Mask_Network
+MDT     Measurable_Data_Token
+MIR     Mirror_Protocol
+MCO2        Moss_Carbon_Credit
+MUSD        mStableUSD
+ALICE       My_Neighbor_Alice
+NKN     NKN
+NU      NuCypher
+NMR     Numeraire
+OMG     OMG_Network
+ORCA        Orca
+OXT     Orchid
+OGN     Origin_Token
+TRAC        OriginTrail
+ORN     Orion_Protocol
+UPI     Pawtocol
+PAX     Paxos_Standard
+PERP        Perpetual_Protocol
+PLA     PlayDapp
+PLU     Pluton
+DOT     Polkadot
+POLS        Polkastarter
+MATIC       Polygon
+POLY        Polymath
+NCT     Polyswarm
+POWR        Powerledger
+PRO     Propy
+QNT     Quant
+QSP     Quantstamp
+QUICK   QuickSwap
+RAD     Radicle
+RAI     Rai_Reflex_Index
+RLY     Rally
+RGT     Rari_Governance_Token
+RARI        Rarible
+REN     Ren
+RNDR        Render_Token
+REQ     Request
+RBN     Ribbon_Finance
+FOX     Shapeshift_FOX_Token
+SHIB        Shiba_Inu
+SHPING      Shping_Coin
+SKL     SKALE
+SOL     Solana
+SPELL       Spell_Token
+STX     Stacks
+SNT     Status_Network
+XLM     Stellar_Lumens
+STORJ       STORJ
+SUKU        SUKU
+SUPER       SuperFarm
+SUSHI       SushiSwap
+SYN     Synapse
+SNX     Synthetix_Network_Token
+TBTC        tBTC
+TRB     Tellor
+UST     TerraUSD
+USDT        Tether
+XTZ     Tezos
+GRT     The_Graph
+TRIBE       Tribe
+TRU     TrueFi
+UMA     UMA
+UNFI        Unifi_Protocol_DAO
+UNI     Uniswap
+USDC        USD_Coin
+VGX     Voyager_Token
+WBTC        Wrapped_Bitcoin
+WCFG        Wrapped_Centrifuge
+WLUNA       Wrapped_LUNA
+XYO     XYO_Network
+YFI     yearn_finance
+ZEC     Zcash
+
+
+"ZRX-USD",
+"1INCH-USD",
+"AAVE-USD",
+"AERGO-USD",
+"AIOZ-USD",
+"ALCX-USD",
+"ACH-USD",
+"AGLD-USD",
+"ALGO-USD",
+"AMP-USD",
+"FORTH-USD",
+"ANKR-USD",
+"API3-USD",
+"ARPA-USD",
+"ASM-USD",
+"REP-USD",
+"AVAX-USD",
+"AVT-USD",
+"AXS-USD",
+"BADGER-USD",
+"BAL-USD",
+"BNT-USD",
+"BAND-USD",
+"BOND-USD",
+"BAT-USD",
+"BICO-USD",
+"BTC-USD",
+"BCH-USD",
+"BLZ-USD",
+"FIDA-USD",
+"AUCTION-USD",
+"BTRST-USD",
+"ADA-USD",
+"CTSI-USD",
+"CGLD-USD",
+"LINK-USD",
+"CHZ-USD",
+"CVC-USD",
+"CLV-USD",
+"COMP-USD",
+"ATOM-USD",
+"COTI-USD",
+"COVAL-USD",
+"CTX-USD",
+"CRO-USD",
+"CRV-USD",
+"DAI-USD",
+"DASH-USD",
+"MANA-USD",
+"DESO-USD",
+"DDX-USD",
+"YFII-USD",
+"DIA-USD",
+"DNT-USD",
+"DOGE-USD",
+"ENJ-USD",
+"MLN-USD",
+"EOS-USD",
+"ETH-USD",
+"ETC-USD",
+"ENS-USD",
+"ERN-USD",
+"FET-USD",
+"FIL-USD",
+"FX-USD",
+"GALA-USD",
+"GTC-USD",
+"GODS-USD",
+"GFI-USD",
+"GLM-USD",
+"GYEN-USD",
+"FARM-USD",
+"HIGH-USD",
+"ZEN-USD",
+"IDEX-USD",
+"RLC-USD",
+"IMX-USD",
+"ICP-USD",
+"INV-USD",
+"IOTX-USD",
+"JASMY-USD",
+"KEEP-USD",
+"KRL-USD",
+"KNC-USD",
+"LCX-USD",
+"LQTY-USD",
+"LTC-USD",
+"LPT-USD",
+"LOOM-USD",
+"LRC-USD",
+"MKR-USD",
+"MPL-USD",
+"MASK-USD",
+"MDT-USD",
+"MIR-USD",
+"MCO2-USD",
+"MUSD-USD",
+"ALICE-USD",
+"NKN-USD",
+"NU-USD",
+"NMR-USD",
+"OMG-USD",
+"ORCA-USD",
+"OXT-USD",
+"OGN-USD",
+"TRAC-USD",
+"ORN-USD",
+"UPI-USD",
+"PAX-USD",
+"PERP-USD",
+"PLA-USD",
+"PLU-USD",
+"DOT-USD",
+"POLS-USD",
+"MATIC-USD",
+"POLY-USD",
+"NCT-USD",
+"POWR-USD",
+"PRO-USD",
+"QNT-USD",
+"QSP-USD",
+"QUICK-USD",
+"RAD-USD",
+"RAI-USD",
+"RLY-USD",
+"RGT-USD",
+"RARI-USD",
+"REN-USD",
+"RNDR-USD",
+"REQ-USD",
+"RBN-USD",
+"FOX-USD",
+"SHIB-USD",
+"SHPING-USD",
+"SKL-USD",
+"SOL-USD",
+"SPELL-USD",
+"STX-USD",
+"SNT-USD",
+"XLM-USD",
+"STORJ-USD",
+"SUKU-USD",
+"SUPER-USD",
+"SUSHI-USD",
+"SYN-USD",
+"SNX-USD",
+"TBTC-USD",
+"TRB-USD",
+"UST-USD",
+"USDT-USD",
+"XTZ-USD",
+"GRT-USD",
+"TRIBE-USD",
+"TRU-USD",
+"UMA-USD",
+"UNFI-USD",
+"UNI-USD",
+"USDC-USD",
+"VGX-USD",
+"WBTC-USD",
+"WCFG-USD",
+"WLUNA-USD",
+"XYO-USD",
+"YFI-USD",
+"ZEC-USD"
+
+"0x",
+"1inch",
+"Aave",
+"Aergo",
+"Aioz_Network",
+"Alchemix",
+"Alchemy_Pay",
+"Adventure_Gold",
+"Algorand",
+"AMP",
+"Ampleforth_Governance_Token",
+"Ankr",
+"API3",
+"ARPA_Chain",
+"Assemble_Protocol",
+"Augur",
+"Avalanche",
+"Aventus",
+"Axie_Infinity",
+"Badger_DAO",
+"Balancer",
+"Bancor_Network_Token",
+"Band_Protocol",
+"BarnBridge",
+"Basic_Attention_Token",
+"Biconomy",
+"Bitcoin",
+"Bitcoin_Cash",
+"Bluzelle",
+"Bonfida",
+"Bounce_Token_AUC",
+"Braintrust",
+"Cardano",
+"Cartesi",
+"Celo",
+"Chainlink",
+"Chiliz",
+"Civic",
+"Clover_Finance",
+"Compound",
+"Cosmos",
+"COTI",
+"COVAL",
+"Cryptex_Finance",
+"Crypto_com_Chain",
+"Curve_DAO_Token",
+"Dai",
+"Dash",
+"Decentraland",
+"Decentralized_Social",
+"DerivaDAO",
+"DFI_Money",
+"Dia",
+"District0x",
+"Dogecoin",
+"Enjin_Coin",
+"Enzyme",
+"EOS",
+"Ethereum",
+"Ethereum_Classic",
+"Ethereum_Name_Service",
+"Ethernity_Chain",
+"Fetch_ai",
+"Filecoin",
+"Function_Coin",
+"Gala",
+"Gitcoin",
+"Gods_Unchained",
+"Goldfinch",
+"Golem",
+"GYEN",
+"Harvest_Finance",
+"Highstreet",
+"Horizen",
+"IDEX",
+"iExec_RLC",
+"Immutable_X",
+"Internet_Computer",
+"Inverse_Finance",
+"IoTeX",
+"Jasmy",
+"Keep_Network",
+"Kryll",
+"Kyber_Network",
+"LCX",
+"Liquidity",
+"Litecoin",
+"Livepeer_LPT",
+"Loom_Network",
+"Loopring",
+"Maker",
+"Maple",
+"Mask_Network",
+"Measurable_Data_Token",
+"Mirror_Protocol",
+"Moss_Carbon_Credit",
+"mStableUSD",
+"My_Neighbor_Alice",
+"NKN",
+"NuCypher",
+"Numeraire",
+"OMG_Network",
+"Orca",
+"Orchid",
+"Origin_Token",
+"OriginTrail",
+"Orion_Protocol",
+"Pawtocol",
+"Paxos_Standard",
+"Perpetual_Protocol",
+"PlayDapp",
+"Pluton",
+"Polkadot",
+"Polkastarter",
+"Polygon",
+"Polymath",
+"Polyswarm",
+"Powerledger",
+"Propy",
+"Quant",
+"Quantstamp",
+"QuickSwap",
+"Radicle",
+"Rai_Reflex_Index",
+"Rally",
+"Rari_Governance_Token",
+"Rarible",
+"Ren",
+"Render_Token",
+"Request",
+"Ribbon_Finance",
+"Shapeshift_FOX_Token",
+"Shiba_Inu",
+"Shping_Coin",
+"SKALE",
+"Solana",
+"Spell_Token",
+"Stacks",
+"Status_Network",
+"Stellar_Lumens",
+"STORJ",
+"SUKU",
+"SuperFarm",
+"SushiSwap",
+"Synapse",
+"Synthetix_Network_Token",
+"tBTC",
+"Tellor",
+"TerraUSD",
+"Tether",
+"Tezos",
+"The_Graph",
+"Tribe",
+"TrueFi",
+"UMA",
+"Unifi_Protocol_DAO",
+"Uniswap",
+"USD_Coin",
+"Voyager_Token",
+"Wrapped_Bitcoin",
+"Wrapped_Centrifuge",
+"Wrapped_LUNA",
+"XYO_Network",
+"yearn_finance",
+"Zcash"
