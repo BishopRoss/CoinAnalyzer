@@ -125,7 +125,5 @@ print(time.ctime())
 
 # 10000 requests an hour
 # Run the loop for 200 coins 50 times in an hour
-
 # 3600 seconds in an hour
-
 # The loop can be run a minimum every 72 seconds
