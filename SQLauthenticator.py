@@ -104,13 +104,22 @@ print("Start Execution : ", end="")
 print(time.ctime())
 print()
 while counter != 129600:
+    try:
+        for i in range(len(coins)):
+            test1 = CoinObj.DatabaseInserter(coins_currency_codes[i], "test", "localhost", coins[i])
+            test1.insertInformation()
+            print(f"Successful insertion for {coins[i]}")
+        counter += 1
+        time.sleep(75)
+    except:
+        print("Your exception code ran.")
+        for i in range(len(coins)):
+            test1 = CoinObj.DatabaseInserter(coins_currency_codes[i], "test", "localhost", coins[i])
+            test1.insertInformation()
+            print(f"Successful insertion for {coins[i]}")
+        counter += 1
+        time.sleep(75)
 
-    for i in range(len(coins)):
-        test1 = CoinObj.DatabaseInserter(coins_currency_codes[i], "test", "localhost", coins[i])
-        test1.insertInformation()
-        print(f"Successful insertion for {coins[i]}")
-    counter += 1
-    time.sleep(75)
 print("Stop Execution : ", end="")
 print(time.ctime())
 
