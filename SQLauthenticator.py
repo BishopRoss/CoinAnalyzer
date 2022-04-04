@@ -98,7 +98,7 @@ coins_currency_codes = ["ZRX-USD", "1INCH-USD", "AAVE-USD", "AERGO-USD", "AIOZ-U
 # mycursor.execute(f"CREATE TABLE {i} (PRICE float, TOTAL_VOLUME float, 30_DAY_VOLUME float, "
 #                      "OPENING_PRICE float, 24_HOUR_HIGH float,24_HOUR_LOW float, TIME datetime )")
 # print(f"Table for {i} Successfully created")
-
+#Test file
 counter = 0
 print("Start Execution : ", end="")
 print(time.ctime())
