@@ -119,7 +119,7 @@ while counter != 129600:
             print(f"Successful insertion for {coins[i]}")
         counter += 1
         time.sleep(75)
-
+ 
 print("Stop Execution : ", end="")
 print(time.ctime())
 
