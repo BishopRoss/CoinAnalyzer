@@ -2,33 +2,11 @@ import CoinObj
 import mysql.connector
 import time
 
-
-class DatabaseLogin:
-
-    def __init__(self):
-        self.host = "null"
-        self.user = "null"
-        self.password = "null"
-        self.database = "null"
-
-    def setHost(self, host):
-        self.host = host
-
-    def __setUsername(self, user):
-        self.user = user
-
-    def __setPassword(self, password):
-        self.password = password
-
-    def setDatabase(self, database):
-        self.database = database
-
-
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
     password="BishopRoss",
-    database="test"
+    database="cryptomonitor"
 )
 
 mycursor = mydb.cursor()
@@ -88,42 +66,81 @@ coins_currency_codes = ["ZRX-USD", "1INCH-USD", "AAVE-USD", "AERGO-USD", "AIOZ-U
                         "TRIBE-USD", "TRU-USD", "UMA-USD", "UNFI-USD", "UNI-USD", "VGX-USD", "WBTC-USD",
                         "WCFG-USD", "WLUNA-USD", "XYO-USD", "YFI-USD", "ZEC-USD"]
 
+coins2 = ["Algorand", "Cosmos", "Cardano", "XYO_Network", "Polygon", "Polkadot", "Ethereum", "Loopring", "Tezos"]
+
+coin_currency_codes2 = ["ALGO-USD", "ATOM-USD", "ADA-USD", "XYO-USD",
+                        "MATIC-USD", "DOT-USD", "ETH-USD", "LRC-USD", "XTZ-USD"]
+
+
 # for i in coins:
 # mycursor.execute(f"DROP TABLE IF EXISTS {i}")
 
-# The script below is for creating the database tables from my coins list.
+# The script below is for creating the database tables from my designated coins list.
+############################################################
+def createTablesScript():
+    for i in coins2:
+        mycursor.execute(f"CREATE TABLE {i} (PRICE float, TOTAL_VOLUME float, 30_DAY_VOLUME float, "
+                         "OPENING_PRICE float, 24_HOUR_HIGH float,24_HOUR_LOW float, TIME datetime )")
+        print(f"Table for {i} Successfully created")
 
 
-# for i in coins:
-# mycursor.execute(f"CREATE TABLE {i} (PRICE float, TOTAL_VOLUME float, 30_DAY_VOLUME float, "
-#                      "OPENING_PRICE float, 24_HOUR_HIGH float,24_HOUR_LOW float, TIME datetime )")
-# print(f"Table for {i} Successfully created")
-#Test file
-counter = 0
-print("Start Execution : ", end="")
-print(time.ctime())
-print()
-while counter != 129600:
-    try:
-        for i in range(len(coins)):
-            test1 = CoinObj.DatabaseInserter(coins_currency_codes[i], "test", "localhost", coins[i])
+############################################################
+
+# This code block is for the repeated retrieval of Coin data for coins contained in a specified list
+#################################################
+def realtimeGrab():
+    counter = 0
+    print("Start Execution : ", end="")
+    print(time.ctime())
+    print()
+    while counter != 129600:
+
+        for i in range(len(coins2)):
+            test1 = CoinObj.DatabaseInserter(coin_currency_codes2[i], "test", "localhost", coins2[i])
             test1.insertInformation()
-            print(f"Successful insertion for {coins[i]}")
+            print(f"Successful insertion for {coins2[i]}")
         counter += 1
-        time.sleep(75)
-    except:
-        print("Your exception code ran.")
-        for i in range(len(coins)):
-            test1 = CoinObj.DatabaseInserter(coins_currency_codes[i], "test", "localhost", coins[i])
-            test1.insertInformation()
-            print(f"Successful insertion for {coins[i]}")
-        counter += 1
-        time.sleep(75)
- 
-print("Stop Execution : ", end="")
-print(time.ctime())
 
-# 10000 requests an hour
-# Run the loop for 200 coins 50 times in an hour
-# 3600 seconds in an hour
-# The loop can be run a minimum every 72 seconds
+        time.sleep(30)
+    print("Stop Execution : ", end="")
+    print(time.ctime())
+
+
+####################################################
+
+
+# This code block is for retrieving the historical coin data for coins contained in a specified list
+####################################################
+def historicGrab():
+    b = cbpro.PublicClient()
+    pd.set_option('display.max_rows', None)
+    historical = pd.DataFrame(
+        b.get_product_historic_rates(product_id="ALGO-USD", start="2022-4-30", end="2022-6-9", granularity=21600))
+    historical.columns = ["Date", "Open", "High", "Low", "Close", "Volume"]
+    historical['Date'] = pd.to_datetime(historical['Date'], unit='s')
+    historical.set_index('Date', inplace=True)
+    historical.sort_values(by='Date', ascending=True, inplace=True)
+
+    historical.to_csv(r'C:\Users\Bishop Ross\Desktop\MySQLexports\AlgorandReport.csv', index=True, header=False,
+                      mode='a')
+    print(historical)
+
+
+####################################################
+
+
+import cbpro
+import pandas as pd
+
+
+b = cbpro.PublicClient()
+pd.set_option('display.max_rows',None)
+historical = pd.DataFrame(
+    b.get_product_historic_rates(product_id="ALGO-USD", start="2022-4-30", end="2022-6-9", granularity=21600))
+historical.columns = ["Date", "Open", "High", "Low", "Close", "Volume"]
+historical['Date'] = pd.to_datetime(historical['Date'], unit='s')
+historical.set_index('Date', inplace=True)
+historical.sort_values(by='Date', ascending=True, inplace=True)
+
+historical.to_csv(r'C:\Users\Bishop Ross\Desktop\MySQLexports\AlgorandReport.csv',index=True,header=False,mode='a')
+print(historical)

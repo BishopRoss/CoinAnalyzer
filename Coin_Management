@@ -496,3 +496,15 @@ ZEC     Zcash
 "XYO_Network",
 "yearn_finance",
 "Zcash"
+
+
+try:
+
+ except:
+        print("Your exception code ran.")
+        for i in range(len(coins)):
+            test1 = CoinObj.DatabaseInserter(coin_currency_codes2[i], "test", "localhost", coins2[i])
+            test1.insertInformation()
+            print(f"Successful insertion for {coins2[i]}")
+        counter += 1
+        time.sleep(75)
