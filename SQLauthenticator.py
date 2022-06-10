@@ -132,15 +132,21 @@ def historicGrab():
 import cbpro
 import pandas as pd
 
+dates = ["2021-1-1", "2021-3-1", "2021-5-1", "2021-7-1", "2021-9-1", "2021-11-1", "2021-12-31","2022-1-1"]
 
 b = cbpro.PublicClient()
-pd.set_option('display.max_rows',None)
+pd.set_option('display.max_rows', None)
 historical = pd.DataFrame(
-    b.get_product_historic_rates(product_id="ALGO-USD", start="2022-4-30", end="2022-6-9", granularity=21600))
+        b.get_product_historic_rates(product_id="ALGO-USD", start=f"{dates[5]}", end=f"{dates[6]}",
+                                     granularity=21600))
 historical.columns = ["Date", "Open", "High", "Low", "Close", "Volume"]
 historical['Date'] = pd.to_datetime(historical['Date'], unit='s')
 historical.set_index('Date', inplace=True)
 historical.sort_values(by='Date', ascending=True, inplace=True)
 
-historical.to_csv(r'C:\Users\Bishop Ross\Desktop\MySQLexports\AlgorandReport.csv',index=True,header=False,mode='a')
+# for creating CSV file
+# historical.to_csv(r'C:\Users\Bishop Ross\PycharmProjects\CoinAnalyzer\AlgorandReport.csv',index=True)
+
+# for appending to CSV file
+historical.to_csv(r'C:\Users\Bishop Ross\PycharmProjects\CoinAnalyzer\AlgorandReport.csv',index=True,header=False,mode='a')
 print(historical)
